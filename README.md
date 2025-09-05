@@ -1,3 +1,4 @@
+04.09.25
 	CRIA UMA PASTA 
 	api-beckend
 	ABRE NO TERMINAL 
@@ -59,4 +60,69 @@
 		create-product.dto.ts 
  		update-product.dto.ts
 		ESCREVE DENTRO 
+		products.controller.ts
+		ESCREVE O IMPORT
+		main.ts
+		ESCREVE DENTRO 
+
+05.09.25
+		MySQL 
+		CRIA UM BANCO
+		TERMINAL
+		npm install @nestjs/typeorm typeorm mysql2
+
+		ENTRA 
+		app.module.ts
+		ADICIONA UM IMPORT
+		ESCREVE DENTRO 
+
+		CRIA UMA PASTA 
+		entities
+		DENTRO DA PASTA 
+		products
 		
+		DENTRO DA PASTA 
+		entities
+		FAZ A PASTA 
+		products.entity.ts
+
+		ESCREVE DENTRO
+		app.module.ts
+		products.service.ts
+		products.controller.ts
+		main.ts
+
+		===================================
+		MEU DEU POBLEMA CONTINUA DA QUI 
+		==================================
+
+		ENTRA NA PASTA DO PROJET 
+		DA UM ABRIR NO TERMINAL 
+ 		npm create vite@latest frontend -- --template react-ts
+		cd frontend
+		npm install
+		npm run dev
+		npm install axios
+
+		ABRE O VSCODE A PASTA FRONTIENDE QUE FOI CRIAD 
+		NA PASTA 
+		src
+		CRIA A PASTA 
+		services 
+		DENTRO DA PASTA  
+		services
+		CRIAR O ARQUIVO 
+		api.ts
+		ESCREVE DENTRO 
+
+		TERMINAL 
+		ENTRA NA PASTA FRONTIENDE 
+		VAI NO ABRIR TERMINAL E COLOCA
+		npm run dev
+		ENTRA NA PASTA API-BECKEND
+		VAI NO ABRIR NO TERMINAL E COLOCA  
+		npm run start:dev
+
+		VAI NA PASTA E COLOCA NA PASTA 
+		app.tsx
+		ESCREVE DENTRO
