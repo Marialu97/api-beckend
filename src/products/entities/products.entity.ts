@@ -1,26 +1,21 @@
-import {
-  Entity,
-  PrimaryGeneratedColumn,
-  Column,
-  CreateDateColumn,
-  ManyToOne,
-} from 'typeorm';
-import { UserEntity } from '../../users/entities/user.entity';
+// src/products/entities/product.entity.ts
+import { UserEntity } from 'src/users/entities/user.entity';
+import { Entity, PrimaryGeneratedColumn, Column, CreateDateColumn, ManyToOne } from 'typeorm';
 
-@Entity({ name: 'products' })
+@Entity({ name: 'products' }) // Mapeia para uma tabela chamada 'products'
 export class ProductEntity {
-  @PrimaryGeneratedColumn()
-  id!: number;
+  @PrimaryGeneratedColumn() // Define como chave primária com auto-incremento
+  id: number;
 
-  @Column({ length: 100 })
-  name!: string;
+  @Column({ length: 100 }) // Define uma coluna do tipo string (varchar)
+  name: string;
 
-  @Column('decimal', { precision: 10, scale: 2 })
-  price!: number;
+  @Column('decimal', { precision: 10, scale: 2 }) // Define uma coluna decimal para preços
+  price: number;
 
-  @CreateDateColumn()
-  createdAt!: Date;
+  @CreateDateColumn({ name: 'created_at' }) // Coluna que armazena a data de criação
+  createdAt: Date;
 
   @ManyToOne(() => UserEntity, (user) => user.products)
-  user!: UserEntity;
+  user: UserEntity
 }

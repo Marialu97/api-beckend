@@ -217,16 +217,39 @@
 		ESCREVE DENTRO
 
 
+18.09.25 
+		COMESAMOS INSTARTANDO O PROJETO 
+		TERMINAL
+		npm run start:dev
+======================================================================================================
+		DEU MUITOS ERROS 
+		ENTAO NO TERMINAL COLOCAMOS 
+		npx npm run typeorm -- migration:generate       
+		npx npm run typeorm -- migration:generate src/migrations/UserProductsRelation    
+		npx npm run typeorm -- migration:run  
+========================================================================================================
+
+		COMESAMOS A VER O QUE FALTAVA VARIAS PASTAS 
+
+		src/auth/get-user.decorator.ts
+		ESCREVE DENTRO get-user.decorator.ts
+
+		src/auth/interfaces/user-payload.interface.ts
+		ESCREVE DENTRO user-payload.interface.ts
+
+		src/auth/common/dto/pagination-response.dto.ts
+		ESCREVE DENTRO pagination-response.dto.ts
+
+		VAI NO MYSQL
+		DPOIS VAI NO localhost
+
+
+		
 
 
 
 
+		
 
-
-
-
-
-
-npm run start:dev
 	
 		

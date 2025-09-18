@@ -1,25 +1,27 @@
+// src/users/entities/user.entity.ts
+import { ProductEntity } from '../../products/entities/products.entity'
+//../../products/entities/product.entity'
 import { Entity, PrimaryGeneratedColumn, Column, OneToMany } from 'typeorm';
-import { ProductEntity } from '../../products/entities/products.entity';
 import { Role } from '../../commons/enums/role.enum';
 
 @Entity({ name: 'users' })
 export class UserEntity {
   @PrimaryGeneratedColumn()
-  id!: number;
+  id: number;
 
   @Column({ unique: true })
-  email!: string;
+  email: string;
 
   @Column()
-  password!: string;
+  password: string;
 
   @Column({
     type: 'enum',
     enum: Role,
-    default: Role.User,
+    default: Role.User, // Todo novo usuário será 'user' por padrão
   })
-  role!: Role;
+  role: Role;
 
   @OneToMany(() => ProductEntity, (product) => product.user)
-  products!: ProductEntity[];
+  products: ProductEntity[];
 }
